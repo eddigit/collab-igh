@@ -616,4 +616,5 @@ export const navPages = [
   { href: "/florence", label: "Florence" },
   { href: "/budget", label: "Budget" },
   { href: "/directeurs", label: "Pour les directeurs" },
+  { href: "/accompagnement", label: "Accompagnement" },
 ];
