@@ -24,7 +24,7 @@ import {
 import type { Phase } from "@/data/budget";
 import {
   ChevronDown,
-  Gift,
+  Handshake,
   Search,
   Cpu,
   Plug,
@@ -40,7 +40,7 @@ import {
 // ─── Phase icons ───
 
 const phaseIcons: Record<string, React.ElementType> = {
-  phase0: Gift,
+  phase0: Handshake,
   phase1: Search,
   phase1b: Cpu,
   phase2: Plug,
@@ -67,18 +67,8 @@ function PhaseCard({
         className="w-full flex items-center justify-between p-5 md:p-6 text-left hover:bg-white/[0.02] transition-colors"
       >
         <div className="flex items-center gap-3 flex-1 min-w-0">
-          <div
-            className={`p-2 rounded-lg flex-shrink-0 ${
-              phase.offert
-                ? "bg-accent-green/10"
-                : "bg-accent-blue/10"
-            }`}
-          >
-            <Icon
-              className={`w-5 h-5 ${
-                phase.offert ? "text-accent-green" : "text-accent-blue"
-              }`}
-            />
+          <div className="p-2 rounded-lg flex-shrink-0 bg-accent-blue/10">
+            <Icon className="w-5 h-5 text-accent-blue" />
           </div>
           <div className="min-w-0">
             <div className="flex items-center gap-2 flex-wrap">
@@ -95,25 +85,19 @@ function PhaseCard({
           </div>
         </div>
         <div className="flex items-center gap-3 flex-shrink-0 ml-3">
-          <span
-            className={`text-sm md:text-base font-bold ${
-              phase.offert ? "text-accent-green" : "text-foreground"
-            }`}
-          >
+          <span className="text-sm md:text-base font-bold text-foreground">
             {phase.total}
           </span>
-          {!phase.offert && (
-            <ChevronDown
-              className={`w-5 h-5 text-foreground-muted transition-transform ${
-                isOpen ? "rotate-180" : ""
-              }`}
-            />
-          )}
+          <ChevronDown
+            className={`w-5 h-5 text-foreground-muted transition-transform ${
+              isOpen ? "rotate-180" : ""
+            }`}
+          />
         </div>
       </button>
 
       <AnimatePresence>
-        {isOpen && !phase.offert && (
+        {isOpen && (
           <motion.div
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
@@ -374,13 +358,7 @@ export default function BudgetPage() {
                       <td className="p-4 text-center text-foreground-muted">
                         {row.jours}
                       </td>
-                      <td
-                        className={`p-4 text-right font-semibold ${
-                          row.total === "Offert"
-                            ? "text-accent-green"
-                            : "text-foreground"
-                        }`}
-                      >
+                      <td className="p-4 text-right font-semibold text-foreground">
                         {row.total}
                       </td>
                     </tr>
@@ -426,13 +404,7 @@ export default function BudgetPage() {
                     <span className="text-xs text-foreground-muted">
                       {row.jours} {row.jours !== "—" ? "jours" : ""}
                     </span>
-                    <span
-                      className={`text-sm font-bold ${
-                        row.total === "Offert"
-                          ? "text-accent-green"
-                          : "text-foreground"
-                      }`}
-                    >
+                    <span className="text-sm font-bold text-foreground">
                       {row.total}
                     </span>
                   </div>
@@ -463,7 +435,7 @@ export default function BudgetPage() {
 
           {/* Conditions de règlement */}
           <AnimatedSection delay={0.2}>
-            <div className="mt-8 grid sm:grid-cols-2 gap-4">
+            <div className="mt-8 grid sm:grid-cols-3 gap-4">
               {conditionsReglement.map((c, i) => (
                 <div
                   key={i}
@@ -545,7 +517,7 @@ export default function BudgetPage() {
           <AnimatedSection delay={0.3}>
             <div className="p-6 rounded-2xl bg-background border border-white/5">
               <h3 className="text-base font-semibold mb-4">
-                Ce qui est inclus dans les 180€/mois/établissement
+                Ce qui est inclus dans les 216€/mois/établissement
               </h3>
               <div className="grid sm:grid-cols-2 gap-2">
                 {abonnementInclus.map((item, i) => (
@@ -651,7 +623,7 @@ export default function BudgetPage() {
         <div className="max-w-4xl mx-auto">
           <AnimatedSection>
             <h2 className="text-2xl md:text-3xl font-bold mb-8">
-              Ce que 180€/mois/EHPAD représente
+              Ce que 216€/mois/EHPAD représente
             </h2>
           </AnimatedSection>
 
