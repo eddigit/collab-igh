@@ -13,6 +13,7 @@ import {
   canaux,
   tonFlorence,
   securite,
+  hebergementLocal,
   comparaison,
   planningFlorence,
 } from "@/data/florence";
@@ -34,6 +35,9 @@ import {
   Zap,
   Database,
   Globe,
+  Server,
+  Gift,
+  MapPin,
 } from "lucide-react";
 
 // ─── Mission category accordion ───
@@ -447,6 +451,87 @@ export default function FlorencePage() {
               </AnimatedSection>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ── Hébergement local — Serveur privé ── */}
+      <section className="py-16 px-6">
+        <div className="max-w-5xl mx-auto">
+          <AnimatedSection>
+            <div className="flex items-center gap-3 mb-2">
+              <Server className="w-7 h-7 text-accent-green" />
+              <h2 className="text-2xl md:text-3xl font-bold">
+                {hebergementLocal.titre}
+              </h2>
+            </div>
+            <p className="text-lg font-medium text-accent-green mb-4">
+              {hebergementLocal.sousTitre}
+            </p>
+            <p className="text-foreground-muted text-[15px] leading-relaxed mb-10 max-w-3xl">
+              {hebergementLocal.description}
+            </p>
+          </AnimatedSection>
+
+          {/* Location highlight */}
+          <AnimatedSection delay={0.1}>
+            <div className="p-5 rounded-2xl bg-accent-blue/5 border border-accent-blue/10 mb-8 flex items-center gap-4">
+              <MapPin className="w-6 h-6 text-accent-blue flex-shrink-0" />
+              <div>
+                <p className="text-sm font-semibold text-accent-blue">Localisation du serveur</p>
+                <p className="text-sm text-foreground/90">
+                  Siège social IGH — 930 Route de Berre, 13090 Aix-en-Provence
+                </p>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Avantages grid */}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+            {hebergementLocal.avantages.map((a, i) => (
+              <AnimatedSection key={i} delay={i * 0.06}>
+                <div className="h-full p-5 rounded-2xl bg-background-alt border border-white/5">
+                  <span className="text-2xl block mb-3">{a.emoji}</span>
+                  <h3 className="font-semibold text-base mb-2">{a.titre}</h3>
+                  <p className="text-sm text-foreground-muted leading-relaxed">
+                    {a.description}
+                  </p>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
+
+          {/* Ce qui est inclus */}
+          <AnimatedSection delay={0.4}>
+            <div className="p-6 rounded-2xl bg-background-alt border border-white/5 mb-6">
+              <h3 className="text-base font-semibold mb-4 flex items-center gap-2">
+                <Check className="w-5 h-5 text-accent-green" />
+                Ce qui est inclus dans l&apos;installation
+              </h3>
+              <div className="grid sm:grid-cols-2 gap-2">
+                {hebergementLocal.inclus.map((item, i) => (
+                  <div key={i} className="flex items-start gap-2">
+                    <Check className="w-4 h-4 text-accent-green mt-0.5 flex-shrink-0" />
+                    <span className="text-sm text-foreground/80">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Condition prix — highlight */}
+          <AnimatedSection delay={0.5}>
+            <div className="p-6 md:p-8 rounded-2xl bg-gradient-to-r from-accent-green/10 to-accent-blue/5 border border-accent-green/20">
+              <div className="flex items-center gap-2 mb-3">
+                <Gift className="w-5 h-5 text-accent-green" />
+                <p className="text-xs font-semibold text-accent-green uppercase tracking-wider">
+                  Installation offerte
+                </p>
+              </div>
+              <p className="text-[15px] text-foreground/90 leading-relaxed">
+                {hebergementLocal.conditionPrix}
+              </p>
+            </div>
+          </AnimatedSection>
         </div>
       </section>
 

@@ -83,7 +83,7 @@ export const axes = [
       "Inspection du travail → Alerte 5 jours avant, relance 2 jours avant, escalade si pas fait",
       "Courrier préfecture → Photo par le directeur, analysé en secondes (expéditeur, objet, deadline, urgence)",
       "Emails critiques ARS/CPAM → Surveillance 24/7 de chaque boîte mail, alerte si pas traité sous 3 jours",
-      "RGPD → Aucun accès données médicales, hébergement France, effacement 30 jours (sauf facturation 3 ans)",
+      "RGPD → Aucun accès données médicales, hébergement France ou serveur privé local à Aix-en-Provence (installation offerte), effacement 30 jours (sauf facturation 3 ans)",
     ],
     preuve:
       "La Rochelle n'aurait jamais eu lieu. Traçabilité complète.",
@@ -224,7 +224,7 @@ export const soncasSections: SoncasSection[] = [
       {
         probleme: "Données sensibles — le RGPD",
         caracteristique:
-          "Aucun accès aux données médicales. Hébergement 100% en France, local si vous le souhaitez. Effacement automatique après 30 jours (sauf facturation\u00a0: 3 ans).",
+          "Aucun accès aux données médicales. Hébergement 100% en France — ou sur un serveur privé installé à votre siège d'Aix-en-Provence (installation offerte). Effacement automatique après 30 jours (sauf facturation\u00a0: 3 ans).",
         avantage: "",
         preuve:
           "M.\u00a0Cozon le sait\u00a0: en tant qu'ancien référent RGPD, il pourra vérifier lui-même la conformité de l'architecture",

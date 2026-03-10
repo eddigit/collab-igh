@@ -479,9 +479,9 @@ export const securite = [
       "Florence n'accède JAMAIS aux dossiers médicaux des résidents",
   },
   {
-    engagement: "Hébergement France",
+    engagement: "Hébergement France ou local",
     detail:
-      "Toutes les données sont hébergées sur des serveurs en France",
+      "Données hébergées sur serveurs en France — ou sur un serveur privé installé à votre siège d'Aix-en-Provence (installation offerte)",
   },
   {
     engagement: "Effacement automatique",
@@ -503,6 +503,63 @@ export const securite = [
       "M.\u00a0Cozon peut auditer à tout moment l'architecture et les flux de données",
   },
 ];
+
+// ─── Hébergement local — option serveur privé ───
+
+export const hebergementLocal = {
+  titre: "Option hébergement local — Serveur privé à Aix-en-Provence",
+  sousTitre: "Le niveau de sécurité le plus élevé : vos données ne quittent jamais vos murs",
+  description:
+    "Pour les organisations qui exigent un contrôle total sur leurs données, nous proposons l'installation d'un serveur privé sécurisé directement au siège social d'IGH, 930 Route de Berre, 13090 Aix-en-Provence. Vos données restent physiquement chez vous, sous votre contrôle exclusif.",
+  avantages: [
+    {
+      titre: "Données 100% sur site",
+      description:
+        "Toutes les données de Florence sont stockées et traitées sur un serveur physique installé dans vos locaux. Rien ne transite par des serveurs externes.",
+      emoji: "🏢",
+    },
+    {
+      titre: "Contrôle total",
+      description:
+        "Vous êtes propriétaire du matériel et des données. Accès physique restreint au personnel autorisé. Votre DSI supervise l'infrastructure.",
+      emoji: "🔐",
+    },
+    {
+      titre: "Conformité renforcée",
+      description:
+        "Niveau de conformité RGPD maximal : pas de transfert de données, pas de sous-traitant cloud, pas de risque juridique lié à l'hébergement tiers.",
+      emoji: "⚖️",
+    },
+    {
+      titre: "Performance optimale",
+      description:
+        "Latence minimale pour les établissements de la région. Connexion directe au réseau interne IGH.",
+      emoji: "⚡",
+    },
+    {
+      titre: "Sauvegarde locale + distante",
+      description:
+        "Sauvegardes automatiques en local avec réplication chiffrée vers un site de secours en France pour la continuité d'activité.",
+      emoji: "💾",
+    },
+    {
+      titre: "Installation offerte",
+      description:
+        "L'installation complète du serveur, la configuration et la mise en service sont offertes. Seul le coût du matériel serveur est en sus.",
+      emoji: "🎁",
+    },
+  ],
+  conditionPrix:
+    "L'installation et la configuration du serveur privé sont offertes. Seul le coût du matériel serveur est à la charge d'IGH (estimé entre 3 000 € et 5 000 € HT selon la configuration retenue).",
+  inclus: [
+    "Installation et configuration complète sur site",
+    "Mise en réseau et sécurisation du serveur",
+    "Migration des données vers le serveur local",
+    "Formation de votre DSI à l'administration du serveur",
+    "Monitoring à distance 24/7 par notre équipe",
+    "Maintenance préventive et mises à jour incluses dans l'abonnement",
+  ],
+};
 
 // ─── Comparaison logiciel vs Florence ───
 

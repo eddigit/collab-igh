@@ -177,8 +177,9 @@ export const infogerance = {
     "Vous n'avez rien à installer, rien à maintenir, rien à mettre à jour. Tout est inclus dans l'abonnement mensuel.",
   items: [
     {
-      titre: "Hébergement France",
-      description: "Serveurs en France, conformité RGPD, données sécurisées.",
+      titre: "Hébergement France ou serveur privé local",
+      description:
+        "Serveurs en France par défaut, conformité RGPD. Option serveur privé installé au siège d'Aix-en-Provence pour un contrôle total des données (installation offerte, matériel en sus).",
       emoji: "🇫🇷",
     },
     {
