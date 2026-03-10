@@ -7,6 +7,7 @@ import AttentesSection from "@/components/AttentesSection";
 import TimelineSection from "@/components/TimelineSection";
 import OutilsSection from "@/components/OutilsSection";
 import DeploiementSection from "@/components/DeploiementSection";
+import { SitePreviewSection } from "@/components/SitePreviewBanner";
 import FooterSection from "@/components/FooterSection";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <TimelineSection />
       <OutilsSection />
       <DeploiementSection />
+      <SitePreviewSection />
       <FooterSection />
     </main>
   );

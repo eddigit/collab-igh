@@ -2,6 +2,7 @@
 
 import AnimatedSection from "@/components/AnimatedSection";
 import FooterSection from "@/components/FooterSection";
+import { SitePreviewSection } from "@/components/SitePreviewBanner";
 import { argumentaireIntro, soncasSections } from "@/data/igh";
 import type { SoncasSection } from "@/data/igh";
 import { ArrowRight } from "lucide-react";
@@ -134,6 +135,13 @@ export default function ArgumentairePage() {
           {soncasSections.map((section, i) => (
             <SoncasTable key={section.id} section={section} index={i} />
           ))}
+        </div>
+      </section>
+
+      {/* Site preview banner */}
+      <section className="py-12 px-6">
+        <div className="max-w-5xl mx-auto">
+          <SitePreviewSection variant="compact" />
         </div>
       </section>
 

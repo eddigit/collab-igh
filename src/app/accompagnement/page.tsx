@@ -11,6 +11,7 @@ import {
   refonteSite,
   infogerance,
 } from "@/data/accompagnement";
+import { SitePreviewSection } from "@/components/SitePreviewBanner";
 import {
   GraduationCap,
   Users,
@@ -21,6 +22,7 @@ import {
   Gift,
   ArrowRight,
   Quote,
+  ExternalLink,
 } from "lucide-react";
 
 // ═══════════════════════════════
@@ -220,13 +222,25 @@ export default function AccompagnementPage() {
                   Inclus dans le projet Florence
                 </p>
               </div>
-              <p className="text-[15px] text-foreground/90 leading-relaxed">
+              <p className="text-[15px] text-foreground/90 leading-relaxed mb-4">
                 {refonteSite.conditionImportante}
               </p>
+              <a
+                href="https://igh-2026.preview.emergentagent.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-2.5 bg-accent-green text-white rounded-full text-sm font-semibold hover:bg-accent-green/90 transition-colors"
+              >
+                Voir l&apos;aperçu du nouveau site
+                <ExternalLink className="w-4 h-4" />
+              </a>
             </div>
           </AnimatedSection>
         </div>
       </section>
+
+      {/* ── Aperçu du nouveau site ── */}
+      <SitePreviewSection />
 
       {/* ── Infogérance ── */}
       <section className="py-16 px-6 bg-background-alt">

@@ -21,6 +21,7 @@ import {
   roiValeurTotal,
   roiMultiplier,
 } from "@/data/budget";
+import { SitePreviewSection } from "@/components/SitePreviewBanner";
 import type { Phase } from "@/data/budget";
 import {
   ChevronDown,
@@ -737,6 +738,13 @@ export default function BudgetPage() {
               </div>
             </div>
           </AnimatedSection>
+        </div>
+      </section>
+
+      {/* Site preview — bonus offert */}
+      <section className="py-12 px-6 bg-background-alt">
+        <div className="max-w-5xl mx-auto">
+          <SitePreviewSection variant="compact" />
         </div>
       </section>
 
