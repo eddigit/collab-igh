@@ -549,4 +549,5 @@ export const navPages = [
   { href: "/argumentaire", label: "Argumentaire" },
   { href: "/a-quoi-ca-sert", label: "À quoi ça sert\u00a0?" },
   { href: "/mise-en-place", label: "Mise en place" },
+  { href: "/florence", label: "Florence" },
 ];
