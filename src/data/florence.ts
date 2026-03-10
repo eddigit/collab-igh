@@ -261,6 +261,37 @@ export const missionsQuotidiennes: MissionCategory[] = [
       },
     ],
   },
+  {
+    id: "formation",
+    emoji: "🎓",
+    titre: "Formation & Soutien technique",
+    rows: [
+      {
+        mission: "Formation continue",
+        action:
+          "Florence forme les directeurs et les équipes en continu\u00a0: bonnes pratiques, utilisation des outils, rappels de procédures. Elle s'adapte au niveau de chaque interlocuteur.",
+        frequence: "Permanent",
+      },
+      {
+        mission: "Soutien technique interne",
+        action:
+          "Florence intervient en soutien technique sur l'ensemble du système pour chaque directeur\u00a0: aide à l'utilisation de Titan, résolution de problèmes courants, guidance pas à pas.",
+        frequence: "À la demande",
+      },
+      {
+        mission: "Onboarding nouveaux directeurs",
+        action:
+          "Quand un nouveau directeur prend ses fonctions, Florence l'accueille et le forme\u00a0: présentation du fonctionnement, des outils, des obligations spécifiques à son établissement.",
+        frequence: "À chaque arrivée",
+      },
+      {
+        mission: "Assistance escaladée",
+        action:
+          "Si Florence ne peut pas résoudre un problème, Léa prend le relais en premier niveau. Gilles intervient en escalade, en distanciel ou présentiel si nécessaire.",
+        frequence: "Selon besoin",
+      },
+    ],
+  },
 ];
 
 // ─── Compétences connectées (APIs) ───

@@ -167,6 +167,33 @@ export const avantages: AvantageCategory[] = [
     ],
   },
   {
+    id: "formation",
+    emoji: "🎓",
+    titre: "Formation & Soutien technique — Vous n'êtes jamais seul(e)",
+    rows: [
+      {
+        situation: "Vous ne savez plus comment faire une opération sur Titan",
+        action: "Florence vous guide pas à pas, en temps réel, sur WhatsApp. Elle connaît les procédures et s'adapte à votre niveau.",
+        benefice: "Plus besoin d'appeler le siège ou d'attendre un technicien",
+      },
+      {
+        situation: "Vous êtes nouveau directeur et vous prenez vos fonctions",
+        action: "Florence vous accueille et vous forme\u00a0: obligations de votre établissement, outils, procédures, contacts clés. Elle vous met à niveau en quelques jours.",
+        benefice: "Vous êtes opérationnel rapidement, sans formation lourde",
+      },
+      {
+        situation: "Un problème technique que Florence ne peut pas résoudre",
+        action: "Léa prend le relais en premier niveau. Si nécessaire, Gilles intervient — en distanciel (inclus) ou en présentiel.",
+        benefice: "Une chaîne d'assistance humaine derrière Florence\u00a0: vous n'êtes jamais bloqué",
+      },
+      {
+        situation: "Vous voulez améliorer vos pratiques de suivi",
+        action: "Florence vous forme en continu\u00a0: bonnes pratiques, rappels de procédures, astuces pour gagner du temps",
+        benefice: "Vous progressez sans effort, au fil de l'eau",
+      },
+    ],
+  },
+  {
     id: "chargementale",
     emoji: "🧠",
     titre: "Charge mentale — Florence porte ce que vous ne devriez plus porter seul",

@@ -29,6 +29,7 @@ import {
   Cpu,
   Plug,
   Rocket,
+  GraduationCap,
   Check,
   CreditCard,
   TrendingUp,
@@ -45,6 +46,7 @@ const phaseIcons: Record<string, React.ElementType> = {
   phase1b: Cpu,
   phase2: Plug,
   phase3: Rocket,
+  phase4: GraduationCap,
 };
 
 // ─── Phase accordion ───

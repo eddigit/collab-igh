@@ -207,7 +207,7 @@ export default function DirecteursPage() {
               Ce que Florence fait pour vous, concrètement
             </h2>
             <p className="text-foreground-muted text-[15px] mb-8">
-              6 domaines, des dizaines de situations couvertes. Cliquez pour voir le détail.
+              7 domaines, des dizaines de situations couvertes. Cliquez pour voir le détail.
             </p>
           </AnimatedSection>
 

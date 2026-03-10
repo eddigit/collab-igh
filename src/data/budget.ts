@@ -161,11 +161,33 @@ export const phases: Phase[] = [
       {
         jour: "J2",
         activites:
-          "Déploiement EHPAD pilote 2 + formation directeurs",
+          "Déploiement EHPAD pilote 2 + formation directeurs pilotes",
         tarif: "768€",
       },
     ],
     note: "+2 semaines de support à distance inclus.",
+  },
+  {
+    id: "phase4",
+    numero: "Phase 4",
+    titre: "Formation plénière directeurs",
+    jours: "2 jours",
+    total: "1\u202f536€ HT",
+    jourRows: [
+      {
+        jour: "J1",
+        activites:
+          "Journée d'intégration — Groupe Nord (~8 directeurs)\u00a0: présentation de Florence, fonctionnement, cas pratiques, prise en main WhatsApp, Q&R",
+        tarif: "768€",
+      },
+      {
+        jour: "J2",
+        activites:
+          "Journée d'intégration — Groupe Sud (~8 directeurs)\u00a0: présentation de Florence, fonctionnement, cas pratiques, prise en main WhatsApp, Q&R",
+        tarif: "768€",
+      },
+    ],
+    note: "2 sessions régionales pour limiter les déplacements des directeurs. Frais de déplacement formateur inclus.",
   },
 ];
 
@@ -184,21 +206,22 @@ export const recapitulatif: RecapRow[] = [
   { phase: "Phase 1B — Analyse + Construction", jours: "4", total: "3\u202f072€" },
   { phase: "Phase 2 — Intégration technique", jours: "4", total: "3\u202f072€" },
   { phase: "Phase 3 — Pilote + Formation", jours: "2", total: "1\u202f536€" },
+  { phase: "Phase 4 — Formation plénière directeurs (Nord + Sud)", jours: "2", total: "1\u202f536€" },
 ];
 
 export const totaux = {
-  totalHT: "10\u202f416€ HT",
-  tva: "2\u202f083,20€",
-  totalTTC: "12\u202f499,20€ TTC",
-  totalJours: 12,
+  totalHT: "11\u202f952€ HT",
+  tva: "2\u202f390,40€",
+  totalTTC: "14\u202f342,40€ TTC",
+  totalJours: 14,
 };
 
 // ─── Conditions de règlement ───
 
 export const conditionsReglement = [
-  { echeance: "Acompte", montant: "4\u202f166,40€ (40%)", declencheur: "À la commande" },
-  { echeance: "2ᵉ échéance", montant: "3\u202f124,80€ (30%)", declencheur: "Début Phase 2 — Intégration technique" },
-  { echeance: "Solde", montant: "3\u202f124,80€ (30%)", declencheur: "Début Phase 3 — Déploiement pilote" },
+  { echeance: "Acompte", montant: "4\u202f780,80€ (40%)", declencheur: "À la commande" },
+  { echeance: "2ᵉ échéance", montant: "3\u202f585,60€ (30%)", declencheur: "Début Phase 2 — Intégration technique" },
+  { echeance: "Solde", montant: "3\u202f585,60€ (30%)", declencheur: "Début Phase 3 — Déploiement pilote" },
 ];
 
 // ─── Abonnement mensuel ───
@@ -232,6 +255,10 @@ export const abonnementInclus = [
   "Gestion courrier (scan → analyse)",
   "Accès APIs juridiques (Légifrance, Judilibre, BODACC, FINESS)",
   "Interface web de pilotage",
+  "Assistance technique Florence\u00a0: soutien et intervention auprès de chaque directeur et établissement",
+  "Formation continue\u00a0: Florence accompagne et forme les équipes en continu",
+  "Infogérance & assistance humaine\u00a0: Léa en premier niveau, Gilles en escalade (présentiel ou distanciel)",
+  "Assistance distancielle Gilles incluse — en cas de présentiel, seuls les frais de déplacement sont refacturés",
   "Mises à jour et évolutions",
   "Infrastructure et hébergement France",
   "Support via WhatsApp",
@@ -327,11 +354,11 @@ export interface RoiValeurRow {
 }
 
 export const roiCouts: RoiCoutRow[] = [
-  { label: "Mise en place", montant: "10\u202f416€ HT", note: "unique" },
+  { label: "Mise en place", montant: "11\u202f952€ HT", note: "unique" },
   { label: "Abonnement 20 établissements", montant: "51\u202f840€/an" },
 ];
 
-export const roiCoutTotal = "62\u202f256€";
+export const roiCoutTotal = "63\u202f792€";
 
 export const roiValeurs: RoiValeurRow[] = [
   { label: "5 admissions récupérées/an", montant: "+150\u202f000€" },
