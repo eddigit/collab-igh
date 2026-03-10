@@ -614,4 +614,5 @@ export const navPages = [
   { href: "/a-quoi-ca-sert", label: "À quoi ça sert\u00a0?" },
   { href: "/mise-en-place", label: "Mise en place" },
   { href: "/florence", label: "Florence" },
+  { href: "/budget", label: "Budget" },
 ];
