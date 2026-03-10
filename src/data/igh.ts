@@ -106,6 +106,7 @@ export const axes = [
     points: [
       "Le collaborateur comprend un document, pose les bonnes questions, relance au bon moment",
       "ViaTrajectoire\u00a0: détection temps réel, alerte directeur, réactivité maximale",
+      "Chatbot sur les sites web de vos 20 établissements\u00a0: accueil des familles, qualification des demandes, orientation 24/7",
     ],
     preuve:
       "Le plus réactif emporte l'admission. Avec ce collaborateur, c'est toujours vous.",
@@ -145,6 +146,19 @@ export const axes = [
       "Équipe dédiée\u00a0: Gilles sur le terrain, Léa dans le groupe.",
     ],
     preuve: null,
+  },
+  {
+    id: 7,
+    emoji: "💬",
+    titre: "Votre vitrine digitale — Chatbot pour vos 20 établissements",
+    points: [
+      "Florence est chatbot sur le site du groupe et les sites de chaque établissement — accueil 24/7",
+      "Elle répond aux familles\u00a0: horaires de visite, tarifs, démarches d'admission, documents nécessaires",
+      "Chaque demande est qualifiée (type de besoin, urgence, établissement) et orientée vers le bon interlocuteur",
+      "Recensement complet des demandes\u00a0: qui a contacté, pour quoi, quand — données consolidées au siège",
+      "Pré-admission en ligne\u00a0: Florence guide les familles dans la constitution du dossier",
+    ],
+    preuve: "Un seul chatbot intelligent pour 20 sites — aucun concurrent n'offre cet accueil.",
   },
 ];
 
@@ -269,6 +283,15 @@ export const soncasSections: SoncasSection[] = [
         preuve:
           "Le groupe le plus réactif emporte l'admission. Avec ce collaborateur, c'est toujours vous.",
       },
+      {
+        probleme:
+          "Vos sites web ne répondent à personne — les familles appellent ou abandonnent",
+        caracteristique:
+          "Florence est chatbot sur les sites de vos 20 établissements. Elle accueille les familles 24/7, répond aux questions, qualifie les demandes et oriente vers le bon interlocuteur.",
+        avantage: "",
+        preuve:
+          "Chaque demande est recensée, qualifiée et transmise. Plus aucune famille ne reste sans réponse — même à 23h un dimanche.",
+      },
     ],
     conclusion:
       "Vous prenez une avance que vos concurrents n'ont pas.",
@@ -383,6 +406,43 @@ export const soncasSections: SoncasSection[] = [
     conclusion:
       "C'est un partenariat, pas un contrat de prestation.",
   },
+  {
+    id: 7,
+    emoji: "💬",
+    titre: "Votre vitrine digitale — Chatbot pour vos 20 établissements",
+    couleur: "green",
+    rows: [
+      {
+        probleme:
+          "Les sites web de vos EHPAD ne répondent à personne. Les familles cherchent des informations, ne trouvent pas, appellent ou abandonnent.",
+        caracteristique:
+          "Florence est déployée en chatbot sur le site du groupe et sur les sites de chaque établissement. Elle accueille les visiteurs 24/7, répond aux questions courantes (horaires de visite, tarifs, démarches d'admission, documents nécessaires).",
+        avantage: "",
+        preuve:
+          "Plus aucune demande perdue. Même à 23h un dimanche, une famille obtient une réponse — et sa demande est enregistrée.",
+      },
+      {
+        probleme:
+          "Les demandes arrivent par téléphone, email, formulaire — elles ne sont pas centralisées ni qualifiées.",
+        caracteristique:
+          "Chaque demande entrante est qualifiée automatiquement\u00a0: type de besoin, urgence, établissement concerné, coordonnées. Puis orientée vers le bon interlocuteur (directeur, médecin coordonnateur, siège).",
+        avantage: "",
+        preuve:
+          "Recensement complet\u00a0: qui a contacté quel établissement, pour quoi, quand. Le siège a la vision complète de la demande entrante sur les 20 établissements.",
+      },
+      {
+        probleme:
+          "Les familles ne savent pas quels documents fournir ni quelles sont les étapes pour une admission.",
+        caracteristique:
+          "Florence guide les familles dans la constitution du dossier d'admission\u00a0: documents nécessaires, étapes, délais. Elle peut pré-remplir une demande et la transmettre au directeur.",
+        avantage: "",
+        preuve:
+          "Un parcours d'admission fluide, professionnel, qui donne confiance aux familles — et qui fait gagner du temps aux directeurs.",
+      },
+    ],
+    conclusion:
+      "Un seul chatbot intelligent pour 20 sites web. Vos concurrents affichent un numéro de téléphone. Vous, vous accueillez.",
+  },
 ];
 
 // ─── PAGE "À QUOI ÇA SERT" — Contenu enrichi ───
@@ -469,6 +529,10 @@ export const tableauComparatif = [
   {
     sans: "Vous espérez que ça tourne",
     avec: "Vous savez que ça tourne — et quand ça ne tourne pas, vous le savez aussi",
+  },
+  {
+    sans: "Vos sites web ne répondent à personne",
+    avec: "Florence accueille les familles 24/7 sur les sites de vos 20 établissements",
   },
 ];
 

@@ -33,6 +33,7 @@ import {
   Check,
   Zap,
   Database,
+  Globe,
 } from "lucide-react";
 
 // ─── Mission category accordion ───
@@ -229,6 +230,7 @@ const canalIcons: Record<string, React.ElementType> = {
   MessageCircle,
   Monitor,
   Mail,
+  Globe,
 };
 
 // ═══════════════════════════════
@@ -386,7 +388,7 @@ export default function FlorencePage() {
             </h2>
           </AnimatedSection>
 
-          <div className="grid sm:grid-cols-3 gap-4 mb-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
             {canaux.map((c, i) => {
               const Icon = canalIcons[c.icon] || MessageCircle;
               return (

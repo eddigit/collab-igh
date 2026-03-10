@@ -218,6 +218,49 @@ export const missionsQuotidiennes: MissionCategory[] = [
       },
     ],
   },
+  {
+    id: "chatbot",
+    emoji: "💬",
+    titre: "Accueil digital & Chatbot",
+    rows: [
+      {
+        mission: "Chatbot sites web",
+        action:
+          "Florence est déployée en chatbot sur le site internet du groupe et/ou sur les sites de chaque établissement. Elle accueille les visiteurs, répond aux questions courantes (horaires de visite, tarifs, démarches d'admission, documents nécessaires).",
+        frequence: "24/7",
+      },
+      {
+        mission: "Qualification des demandes",
+        action:
+          "Chaque demande entrante (famille, médecin traitant, assistante sociale) est qualifiée automatiquement\u00a0: type de besoin, urgence, établissement concerné, coordonnées.",
+        frequence: "Temps réel",
+      },
+      {
+        mission: "Canalisation des flux",
+        action:
+          "Les demandes sont triées et orientées vers le bon interlocuteur\u00a0: admission → directeur concerné, question médicale → médecin coordonnateur, réclamation → siège.",
+        frequence: "Automatique",
+      },
+      {
+        mission: "Recensement des demandes",
+        action:
+          "Historique complet de toutes les interactions\u00a0: qui a contacté quel établissement, pour quoi, quand. Données consolidées pour le siège.",
+        frequence: "Permanent",
+      },
+      {
+        mission: "Pré-admission en ligne",
+        action:
+          "Florence guide les familles dans la constitution du dossier d'admission\u00a0: documents nécessaires, étapes, délais. Elle peut pré-remplir une demande et la transmettre au directeur.",
+        frequence: "À la demande",
+      },
+      {
+        mission: "Support multi-établissements",
+        action:
+          "Un seul chatbot pour les 20 établissements — Florence connaît les spécificités de chacun et adapte ses réponses selon l'établissement consulté.",
+        frequence: "24/7",
+      },
+    ],
+  },
 ];
 
 // ─── Compétences connectées (APIs) ───
@@ -385,6 +428,12 @@ export const canaux = [
       "Florence peut envoyer des rapports formalisés par email (rapports hebdomadaires, bilans mensuels).",
     icon: "Mail",
   },
+  {
+    canal: "Chatbot site web",
+    usage:
+      "Intégrée sur le site du groupe et les sites des 20 établissements — accueil des familles, qualification des demandes, orientation vers le bon interlocuteur. 24/7.",
+    icon: "Globe",
+  },
 ];
 
 export const tonFlorence =
@@ -463,6 +512,11 @@ export const comparaison = [
   {
     logiciel: "Il tombe en panne",
     florence: "Elle est disponible 24h/24, 7j/7, 365 jours par an",
+  },
+  {
+    logiciel: "Il n'accueille personne sur votre site web",
+    florence:
+      "Elle est chatbot sur les sites de vos 20 établissements — elle accueille, qualifie et oriente chaque demande",
   },
 ];
 
