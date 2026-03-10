@@ -8,7 +8,7 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16"
     >
       {/* Animated gradient background */}
       <div className="absolute inset-0 animate-gradient bg-gradient-to-br from-[#0a0a1a] via-[#0f172a] to-[#0a0a1a]" />
