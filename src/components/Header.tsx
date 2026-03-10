@@ -13,17 +13,15 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-white/5">
-      {/* Top bar: logo + hamburger (mobile) */}
-      <div className="max-w-7xl mx-auto px-4 md:px-6 h-14 flex items-center justify-between">
-        {/* Logo */}
-        <Link href="/" className="text-lg font-bold tracking-tight flex-shrink-0">
+      {/* Row 1: Logo centered + hamburger on mobile */}
+      <div className="flex items-center justify-between lg:justify-center px-4 h-11">
+        <Link href="/" className="text-base font-bold tracking-tight">
           <span className="text-accent-blue">IGH</span>{" "}
-          <span className="text-foreground-muted font-normal text-sm">
+          <span className="text-foreground-muted font-normal text-xs">
             Collaborateur IA
           </span>
         </Link>
 
-        {/* Mobile hamburger */}
         <button
           onClick={() => setOpen(!open)}
           className="lg:hidden p-2 rounded-lg hover:bg-white/5 transition-colors"
@@ -31,43 +29,38 @@ export default function Header() {
         >
           {open ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
         </button>
-
-        {/* Desktop: empty space — nav is below */}
-        <div className="hidden lg:block" />
       </div>
 
-      {/* Desktop nav — second row, horizontally scrollable */}
-      <nav className="hidden lg:block border-t border-white/[0.03] bg-background/40">
-        <div className="max-w-7xl mx-auto px-4 md:px-6">
-          <div className="flex items-center gap-0.5 overflow-x-auto scrollbar-hide py-1">
-            {navPages.map((page) => {
-              const isActive = pathname === page.href;
-              return (
-                <Link
-                  key={page.href}
-                  href={page.href}
-                  className={`relative px-3.5 py-2 rounded-lg text-[13px] font-medium transition-colors whitespace-nowrap flex-shrink-0 ${
-                    isActive
-                      ? "text-foreground"
-                      : "text-foreground-muted hover:text-foreground hover:bg-white/5"
-                  }`}
-                >
-                  {page.label}
-                  {isActive && (
-                    <motion.div
-                      layoutId="activeTab"
-                      className="absolute inset-0 rounded-lg bg-white/5 border border-white/10"
-                      transition={{
-                        type: "spring",
-                        bounce: 0.2,
-                        duration: 0.5,
-                      }}
-                    />
-                  )}
-                </Link>
-              );
-            })}
-          </div>
+      {/* Row 2: Nav tabs centered */}
+      <nav className="hidden lg:block border-t border-white/[0.03]">
+        <div className="flex items-center justify-center gap-0.5 overflow-x-auto scrollbar-hide py-1 px-4">
+          {navPages.map((page) => {
+            const isActive = pathname === page.href;
+            return (
+              <Link
+                key={page.href}
+                href={page.href}
+                className={`relative px-3 py-1.5 rounded-md text-[13px] font-medium transition-colors whitespace-nowrap flex-shrink-0 ${
+                  isActive
+                    ? "text-foreground"
+                    : "text-foreground-muted hover:text-foreground hover:bg-white/5"
+                }`}
+              >
+                {page.label}
+                {isActive && (
+                  <motion.div
+                    layoutId="activeTab"
+                    className="absolute inset-0 rounded-md bg-white/5 border border-white/10"
+                    transition={{
+                      type: "spring",
+                      bounce: 0.2,
+                      duration: 0.5,
+                    }}
+                  />
+                )}
+              </Link>
+            );
+          })}
         </div>
       </nav>
 
