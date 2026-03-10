@@ -266,7 +266,7 @@ export default function BudgetPage() {
   const [openPhase, setOpenPhase] = useState<string | null>("phase1");
 
   return (
-    <main className="pt-16">
+    <main className="pt-24">
       {/* ── Hero ── */}
       <section className="py-16 md:py-24 px-6 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-accent-green/5 to-transparent" />

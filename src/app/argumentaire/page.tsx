@@ -109,7 +109,7 @@ function SoncasTable({ section, index }: { section: SoncasSection; index: number
 
 export default function ArgumentairePage() {
   return (
-    <main className="pt-16">
+    <main className="pt-24">
       {/* Header */}
       <section className="py-20 md:py-28 px-6 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-accent-blue/5 to-transparent" />
