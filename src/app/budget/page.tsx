@@ -741,7 +741,7 @@ export default function BudgetPage() {
         </div>
       </section>
 
-      {/* Site preview — bonus offert */}
+      {/* Site preview — refonte site 1 990€ */}
       <section className="py-12 px-6 bg-background-alt">
         <div className="max-w-5xl mx-auto">
           <SitePreviewSection variant="compact" />

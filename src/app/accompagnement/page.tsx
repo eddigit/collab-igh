@@ -219,7 +219,7 @@ export default function AccompagnementPage() {
               <div className="flex items-center gap-2 mb-3">
                 <Gift className="w-5 h-5 text-accent-green" />
                 <p className="text-xs font-semibold text-accent-green uppercase tracking-wider">
-                  Inclus dans le projet Florence
+                  Tarif préférentiel projet Florence
                 </p>
               </div>
               <p className="text-[15px] text-foreground/90 leading-relaxed mb-4">
@@ -290,7 +290,7 @@ export default function AccompagnementPage() {
                   "Assistance bureautique & outils",
                   "Assistance humaine (Léa + Gilles)",
                   "Infogérance & hébergement France",
-                  "Refonte site internet offerte",
+                  "Refonte site internet — 1\u202f990€ au lieu de 5\u202f900€",
                   "Mises à jour & évolutions",
                   "Support WhatsApp",
                   "Formation présentielle initiale",

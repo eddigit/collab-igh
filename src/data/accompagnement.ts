@@ -123,16 +123,16 @@ export const assistanceHumaine = {
 // ─── Refonte site internet ───
 
 export const refonteSite = {
-  titre: "Refonte du site internet — Offerte",
-  sousTitre: "Un bonus inclus dans le projet Florence",
+  titre: "Refonte du site internet — 1\u202f990€ HT",
+  sousTitre: "Au lieu de 5\u202f900€ HT — tarif préférentiel projet Florence",
   description:
     "L'intégration de Florence en tant que chatbot sur le site du groupe et les sites des 20 établissements nécessite une technologie moderne que le site actuel ne supporte pas. Plutôt que de greffer Florence sur une infrastructure vieillissante, nous refaisons le site.",
   avantages: [
     {
-      titre: "Refonte complète offerte",
+      titre: "Refonte complète — 1\u202f990€ au lieu de 5\u202f900€",
       description:
-        "Dans le cadre de l'acceptation du projet Florence, la refonte du site internet du groupe IGH est prise en charge intégralement — sans surcoût.",
-      emoji: "🎁",
+        "Dans le cadre de l'acceptation du projet Florence, la refonte du site internet du groupe IGH bénéficie d'un tarif préférentiel exceptionnel\u00a0: 1\u202f990€ HT au lieu de 5\u202f900€ HT.",
+      emoji: "💰",
     },
     {
       titre: "Technologie moderne",
@@ -166,7 +166,7 @@ export const refonteSite = {
     },
   ],
   conditionImportante:
-    "La refonte du site internet est offerte dans le cadre de l'acceptation du budget Projet Florence. C'est un investissement de notre part pour garantir que Florence soit pleinement opérationnelle sur tous vos canaux — et que le groupe IGH ait enfin une vitrine digitale à la hauteur de ses 20 établissements.",
+    "La refonte du site internet est proposée à 1\u202f990€ HT au lieu de 5\u202f900€ HT dans le cadre de l'acceptation du budget Projet Florence. Un tarif préférentiel pour garantir que Florence soit pleinement opérationnelle sur tous vos canaux — et que le groupe IGH ait enfin une vitrine digitale à la hauteur de ses 20 établissements.",
 };
 
 // ─── Infogérance ───

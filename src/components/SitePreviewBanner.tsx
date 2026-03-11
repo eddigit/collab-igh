@@ -26,15 +26,16 @@ export function SitePreviewSection({ variant = "default" }: { variant?: "default
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent-green/10 border border-accent-green/20 mb-6">
               <Gift className="w-4 h-4 text-accent-green" />
               <span className="text-sm font-semibold text-accent-green">
-                Offert avec le projet Florence
+                <span className="line-through text-foreground-muted">5&nbsp;900€ HT</span>{" "}
+                1&nbsp;990€ HT — Tarif projet Florence
               </span>
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-4">
               Votre nouveau site internet
             </h2>
             <p className="text-foreground-muted text-lg leading-relaxed max-w-3xl mx-auto">
-              La refonte complète du site du Groupe IGH est{" "}
-              <span className="text-accent-green font-semibold">offerte</span>{" "}
+              La refonte complète du site du Groupe IGH est proposée à{" "}
+              <span className="text-accent-green font-semibold">1&nbsp;990€ HT au lieu de <span className="line-through text-foreground-muted">5&nbsp;900€ HT</span></span>{" "}
               dans le cadre de l&apos;engagement global de la solution Florence.
               Moderne, rapide, avec Florence intégrée en chatbot sur les 20 établissements.
             </p>
@@ -111,8 +112,8 @@ export function SitePreviewSection({ variant = "default" }: { variant?: "default
           <div className="mt-12 grid sm:grid-cols-3 gap-4">
             {[
               {
-                title: "Refonte offerte",
-                desc: "Intégralement prise en charge si engagement global sur la solution Florence",
+                title: "1\u202f990€ au lieu de 5\u202f900€",
+                desc: "Tarif préférentiel dans le cadre de l'engagement global sur la solution Florence",
                 icon: Gift,
               },
               {
@@ -157,7 +158,7 @@ function SitePreviewCompact() {
             <div className="flex items-center gap-2 mb-3">
               <Gift className="w-5 h-5 text-accent-green" />
               <p className="text-xs font-semibold text-accent-green uppercase tracking-wider">
-                Bonus — Offert avec la solution Florence
+                <span className="line-through text-foreground-muted">5&nbsp;900€</span> → 1&nbsp;990€ HT — Tarif projet Florence
               </p>
             </div>
             <h3 className="text-xl md:text-2xl font-bold mb-2">
@@ -165,7 +166,7 @@ function SitePreviewCompact() {
             </h3>
             <p className="text-sm text-foreground-muted leading-relaxed">
               Un nouveau site moderne pour le groupe et ses 20 établissements, avec Florence
-              en chatbot intégré. Offert dans le cadre de l&apos;engagement global.
+              en chatbot intégré. 1&nbsp;990€ HT au lieu de 5&nbsp;900€ dans le cadre du projet Florence.
             </p>
           </div>
           <a
