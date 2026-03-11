@@ -13,6 +13,7 @@ import {
   abonnementTarif,
   abonnementOptions,
   abonnementInclus,
+  prestationsComplementaires,
   comparaisonSalarie,
   reperes,
   roiCouts,
@@ -37,6 +38,7 @@ import {
   Scale,
   Zap,
   Star,
+  Clock,
 } from "lucide-react";
 
 // ─── Phase icons ───
@@ -520,7 +522,7 @@ export default function BudgetPage() {
           <AnimatedSection delay={0.3}>
             <div className="p-6 rounded-2xl bg-background border border-white/5">
               <h3 className="text-base font-semibold mb-4">
-                Ce qui est inclus dans les 216€/mois/établissement
+                Tout inclus dans les 216€ HT/mois/établissement
               </h3>
               <div className="grid sm:grid-cols-2 gap-2">
                 {abonnementInclus.map((item, i) => (
@@ -529,6 +531,29 @@ export default function BudgetPage() {
                     <span className="text-sm text-foreground/80">{item}</span>
                   </div>
                 ))}
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Prestations complémentaires */}
+          <AnimatedSection delay={0.4}>
+            <div className="mt-6 p-6 rounded-2xl bg-background border border-white/5">
+              <div className="flex items-center gap-3 mb-3">
+                <Clock className="w-5 h-5 text-accent-blue" />
+                <h3 className="text-base font-semibold">
+                  Besoin digital spécifique ?
+                </h3>
+              </div>
+              <p className="text-sm text-foreground-muted leading-relaxed mb-4">
+                {prestationsComplementaires.description}
+              </p>
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent-blue/10 border border-accent-blue/20">
+                <span className="text-lg font-bold text-accent-blue">
+                  {prestationsComplementaires.tarifHoraire}
+                </span>
+                <span className="text-xs text-foreground-muted">
+                  — {prestationsComplementaires.label}
+                </span>
               </div>
             </div>
           </AnimatedSection>

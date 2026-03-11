@@ -255,14 +255,23 @@ export const abonnementInclus = [
   "Gestion courrier (scan → analyse)",
   "Accès APIs juridiques (Légifrance, Judilibre, BODACC, FINESS)",
   "Interface web de pilotage",
-  "Assistance technique Florence\u00a0: soutien et intervention auprès de chaque directeur et établissement",
-  "Formation continue\u00a0: Florence accompagne et forme les équipes en continu",
+  "Formation continue des directeurs par Florence IA\u00a0: accompagnement quotidien personnalisé sur les outils métier, la bureautique et le réglementaire",
+  "Maintenance et cohérence fonctionnelle de l'ensemble de la solution",
   "Infogérance & assistance humaine\u00a0: Léa en premier niveau, Gilles en escalade (présentiel ou distanciel)",
   "Assistance distancielle Gilles incluse — en cas de présentiel, seuls les frais de déplacement sont refacturés",
   "Mises à jour et évolutions",
   "Infrastructure et hébergement France",
   "Support via WhatsApp",
 ];
+
+// ─── Prestations digitales complémentaires ───
+
+export const prestationsComplementaires = {
+  tarifHoraire: "90€ HT / heure",
+  label: "Tarif préférentiel IGH",
+  description:
+    "Pour tout besoin digital spécifique au-delà du périmètre Florence\u00a0: développement sur mesure, intégrations supplémentaires, automatisations spécifiques, consulting digital.",
+};
 
 // ─── Comparaison Florence vs salarié ───
 

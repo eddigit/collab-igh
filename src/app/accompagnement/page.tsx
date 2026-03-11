@@ -286,11 +286,11 @@ export default function AccompagnementPage() {
               <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3 text-left max-w-3xl mx-auto">
                 {[
                   "Florence 24/7 — IA dédiée",
-                  "Formation continue par Florence",
+                  "Formation continue des directeurs par Florence IA",
+                  "Maintenance et cohérence fonctionnelle de l'ensemble de la solution",
                   "Assistance bureautique & outils",
                   "Assistance humaine (Léa + Gilles)",
                   "Infogérance & hébergement France",
-                  "Refonte site internet — 1\u202f990€ au lieu de 5\u202f900€",
                   "Mises à jour & évolutions",
                   "Support WhatsApp",
                   "Formation présentielle initiale",
@@ -300,6 +300,15 @@ export default function AccompagnementPage() {
                     <span className="text-sm text-foreground/90">{item}</span>
                   </div>
                 ))}
+              </div>
+
+              {/* Tarif horaire complémentaire */}
+              <div className="mt-6 pt-6 border-t border-white/10">
+                <p className="text-sm text-foreground/80">
+                  Besoin digital spécifique hors périmètre Florence ?{" "}
+                  <span className="font-semibold text-accent-blue">90€ HT/h</span>{" "}
+                  <span className="text-foreground-muted">(tarif préférentiel IGH)</span>
+                </p>
               </div>
             </div>
           </AnimatedSection>
