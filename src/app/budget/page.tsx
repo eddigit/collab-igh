@@ -16,11 +16,6 @@ import {
   prestationsComplementaires,
   comparaisonSalarie,
   reperes,
-  roiCouts,
-  roiCoutTotal,
-  roiValeurs,
-  roiValeurTotal,
-  roiMultiplier,
 } from "@/data/budget";
 import { SitePreviewSection } from "@/components/SitePreviewBanner";
 import type { Phase } from "@/data/budget";
@@ -34,7 +29,6 @@ import {
   GraduationCap,
   Check,
   CreditCard,
-  TrendingUp,
   Scale,
   Zap,
   Star,
@@ -669,100 +663,6 @@ export default function BudgetPage() {
               </AnimatedSection>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* ── ROI global annuel ── */}
-      <section className="py-16 px-6">
-        <div className="max-w-4xl mx-auto">
-          <AnimatedSection>
-            <h2 className="text-2xl md:text-3xl font-bold mb-8 flex items-center gap-3">
-              <TrendingUp className="w-7 h-7 text-accent-green" />
-              ROI global annuel
-            </h2>
-          </AnimatedSection>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            {/* Coûts */}
-            <AnimatedSection delay={0.1}>
-              <div className="h-full p-6 rounded-2xl bg-background-alt border border-white/5">
-                <h3 className="text-xs font-semibold text-foreground-muted uppercase tracking-wider mb-4">
-                  Investissement
-                </h3>
-                <div className="space-y-3 mb-4">
-                  {roiCouts.map((c, i) => (
-                    <div key={i} className="flex items-center justify-between">
-                      <span className="text-sm text-foreground/80">
-                        {c.label}
-                        {c.note && (
-                          <span className="text-xs text-foreground-muted ml-1">
-                            ({c.note})
-                          </span>
-                        )}
-                      </span>
-                      <span className="text-sm font-semibold">{c.montant}</span>
-                    </div>
-                  ))}
-                </div>
-                <div className="pt-3 border-t border-white/10 flex items-center justify-between">
-                  <span className="font-semibold text-sm">Coût total année 1</span>
-                  <span className="text-lg font-bold">{roiCoutTotal}</span>
-                </div>
-              </div>
-            </AnimatedSection>
-
-            {/* Valeur */}
-            <AnimatedSection delay={0.2}>
-              <div className="h-full p-6 rounded-2xl bg-accent-green/5 border border-accent-green/20">
-                <h3 className="text-xs font-semibold text-accent-green uppercase tracking-wider mb-4">
-                  Valeur générée
-                </h3>
-                <div className="space-y-3 mb-4">
-                  {roiValeurs.map((v, i) => (
-                    <div key={i} className="flex items-center justify-between">
-                      <span className="text-sm text-foreground/80">
-                        {v.label}
-                      </span>
-                      <span className="text-sm font-semibold text-accent-green">
-                        {v.montant}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-                <div className="pt-3 border-t border-accent-green/20 flex items-center justify-between">
-                  <span className="font-semibold text-sm">Valeur annuelle</span>
-                  <span className="text-lg font-bold text-accent-green">
-                    {roiValeurTotal}
-                  </span>
-                </div>
-              </div>
-            </AnimatedSection>
-          </div>
-
-          {/* ROI multiplier highlight */}
-          <AnimatedSection delay={0.3}>
-            <div className="mt-8 p-6 md:p-8 rounded-2xl bg-gradient-to-r from-accent-blue/10 to-accent-green/10 border border-white/10 text-center">
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12">
-                <div>
-                  <p className="text-xs font-semibold text-foreground-muted uppercase tracking-wider mb-2">
-                    ROI année 1
-                  </p>
-                  <p className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-accent-blue to-accent-green bg-clip-text text-transparent">
-                    {roiMultiplier.annee1}
-                  </p>
-                </div>
-                <div className="hidden sm:block w-px h-16 bg-white/10" />
-                <div>
-                  <p className="text-xs font-semibold text-foreground-muted uppercase tracking-wider mb-2">
-                    ROI année 2+
-                  </p>
-                  <p className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-accent-green to-accent-blue bg-clip-text text-transparent">
-                    {roiMultiplier.annee2Plus}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </AnimatedSection>
         </div>
       </section>
 
